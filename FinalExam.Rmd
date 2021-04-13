@@ -1,0 +1,179 @@
+---
+title: "Semester Examinations"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+### RVSIMSR
+### Semester Exam
+
+#### Name: 
+#### Register Number: 
+
+##### Note: Download the dataset along with this notebook 
+
+#### Answer any 5 questions.
+
+#### Read in the necessary packages and datasets.
+
+```{r}
+library(tidyverse)
+library(nycflights13)
+library(statsr)
+data(mpg)
+data(diamonds)
+data(mtcars)
+data(flights)
+```
+
+
+1. Read in the datasets named, [001.csv, 002.csv, 003.csv, 004.csv, 005.csv] from specdata dataset. The dataset contains pollution monitoring data for fine particulate matter (PM) air pollution at 5 locations in the United States. Each variable contains:    
+  - Date: the date of the observation in YYYY-MM-DD format (year-month-day)
+  - sulfate: the level of sulfate PM in the air on that date (measured in micrograms per cubic meter)
+  - nitrate: the level of nitrate PM in the air on that date (measured in micrograms per cubic meter)
+
+```{r}
+
+```
+
+
+2. With the datasets you just read from Question 1, find the number of completely observed cases for the five datasets. Completely observed cases are the observations where there are no NA's in all it's variables. [001.csv, 002.csv, 003.csv, 004.csv, 005.csv]
+
+```{r}
+
+```
+
+
+3. With the datasets you read from Question 1, find the mean of a pollutant(sulfate or nitrate) across the list of monitors. i.e.,[001.csv, 002.csv, 003.csv, 004.csv, 005.csv]
+
+```{r}
+
+```
+
+
+4. With the mpg dataset, answer the following questions:
+  a. find the frequency count of all the cars with respect to the number of cylinders in a car. 
+
+```{r}
+
+```
+
+  b. find the frequency count with respect to the class of the car.
+  
+```{r}
+
+```
+  
+  c. create a bar plot to visualize the frequencies of driving type of all the cars
+  
+```{r}
+
+```
+  
+
+5. With the mpg dataset, answer the following questions:
+  a. How many rows are in mpg?
+  
+```{r}
+
+```
+  
+  b. How many columns?
+  
+```{r}
+
+```
+  
+
+  c. Make a scatterplot of hwy versus displ.
+  
+```{r}
+
+```
+  
+  d. With the scatterplot you created above, add a regression line to the plot.
+  
+```{r}
+
+```
+  
+  
+6. With the flights dataset, answer the following questions:
+
+  a. find the monthly average delay of all the flights.
+  
+```{r}
+
+```
+  
+  b. filter all the flights that are departed in summer (July, August and September)
+  
+```{r}
+
+```
+  
+  
+7. With the flights dataset, answer the following questions:
+
+  a. sort flights to find the most delayed flights.
+  
+```{r}
+
+```
+  
+  b. select columns, which ends with "time" string.
+  
+```{r}
+
+```
+
+
+8. With the arbuthnot dataset, answer the following questions:
+
+  a. add a new variable called as `total` and assign it with the value of `boys + girls`
+  
+```{r}
+
+```
+  
+
+  b. create a new variable that indicates whether number of baptised boys is greater than number of baptised girls in an year
+
+```{r}
+
+```
+
+9. With the diamonds dataset, answer the following questions:
+
+  a. create a scatter plot to visualize the relationship between carat and price
+variables.
+
+```{r}
+
+```
+
+
+  b. Create a simple linear regression model using the variable carat to predict the price and store the resulting model to a variable called 'simple_model'
+  
+```{r}
+
+```
+
+  
+10. With the diamonds dataset, answer the following questions:
+
+  a. Create a dataframe using tibble function with the following data in it.
+  
+  carat = 0.31
+  
+```{r}
+
+```
+  
+  b. Predict the price the diamond using the model you've created in question 9.b and the dataset you've created in question 10.a
+  
+```{r}
+
+```
+  
